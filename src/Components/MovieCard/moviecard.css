@@ -3,3 +3,14 @@
   color: white;
   width: 400px;
 }
+.titlebtn{
+  text-decoration: none;
+  background-color: #ff0000; /* Green */
+  border-radius: 15%;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
