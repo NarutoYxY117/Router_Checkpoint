@@ -1,6 +1,7 @@
 import "./filtring.css";
 import ReactStars from "react-rating-stars-component";
 import {useRef,useState} from "react";
+import {Link} from 'react-router-dom'
 
 
 export default function Filtring({filter}) {
@@ -21,7 +22,7 @@ export default function Filtring({filter}) {
 
     return (
         <form className="searchform" onChange={submitted} onSubmit={submitted}>
-            <h3> FILTER BAR </h3>
+           <Link to='/'> <h3> KonohaFlix </h3></Link>
             <input ref={searchRef} className="form-control form-control-lg searchinp" type="text" placeholder="Search for film..." aria-label=".form-control-lg example" />
             <button className="btn btn-primary searchbtn" type="submit" >Search</button>
 
@@ -30,7 +31,7 @@ export default function Filtring({filter}) {
                             onChange={ratingChanged}
                             size={50}
                             isHalf={true}
-                            activeColor="#ffd700"/>
+                            activeColor="red"/>
         </form>
     )
 }
